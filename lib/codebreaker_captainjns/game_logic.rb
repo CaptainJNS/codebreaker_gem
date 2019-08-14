@@ -1,11 +1,13 @@
+# frozen_string_literal: true
+
 module GameLogic
   include I18n
 
   DIFFICULTY_HASH = {
-    I18n.t(:easy) => [15, 3],
-    I18n.t(:medium) => [10, 2],
-    I18n.t(:hard) => [5, 1],
-    I18n.t(:hell) => [3, 0]
+    I18n.t('game.easy') => [15, 3],
+    I18n.t('game.medium') => [10, 2],
+    I18n.t('game.hard') => [5, 1],
+    I18n.t('game.hell') => [3, 0]
   }.freeze
 
   def make_number(chars = 4, numbers = 6)
