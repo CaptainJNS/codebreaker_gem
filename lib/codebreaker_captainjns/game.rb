@@ -6,7 +6,7 @@ module CodebreakerCaptainjns
     attr_reader :att_total, :attempts, :difficulty, :hints_total, :hints, :name, :win, :secret
   
     def initialize(params)
-      @name = params['name']
+      @name = params['username']
       @difficulty = params['difficulty']
       @attempts = calc_attempts_and_hints(@difficulty)[0]
       @hints = calc_attempts_and_hints(@difficulty)[1]

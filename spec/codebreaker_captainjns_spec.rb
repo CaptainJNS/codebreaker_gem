@@ -8,6 +8,6 @@ RSpec.describe CodebreakerCaptainjns do
   end
 
   it 'does something useful' do
-    CodebreakerCaptainjns::Game.new('name' => 'Name', 'difficulty' => 'Easy')
+    CodebreakerCaptainjns::Game.new('username' => 'Name', 'difficulty' => 'Easy')
   end
 end
